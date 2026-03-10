@@ -7,26 +7,22 @@
 
 <body>
 
-<h1>Advanced QR Code Generator</h1>
+<h1>QR Code Generator</h1>
 
 <form method="POST">
 
 <input type="text" name="data" placeholder="Enter text or URL" required>
 
-<button type="submit">Generate QR</button>
+<br><br>
+
+<button type="submit">Generate QR Code</button>
 
 </form>
 
 {% if qr %}
 <h2>Your QR Code</h2>
 
-<img src="{{qr}}" width="250">
-
-<br><br>
-
-<a href="/download">
-<button>Download QR Code</button>
-</a>
+<img src="{{ qr }}" width="250">
 
 {% endif %}
 
